@@ -1,0 +1,41 @@
+{
+  "name": "sample",
+  "version": "0.0.0",
+  "description": "gulp plugin for sample",
+  "main": "sample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gulp",
+    "plugin"
+  ],
+  "author": "liszt",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "through-gulp": "^0.5.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "gulp-clean": "^0.3.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-typescript": "^3.2.2",
+    "gulp-util": "^3.0.8",
+    "http": "0.0.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "rimraf": "^2.6.1",
+    "run-sequence": "^2.1.0",
+    "through-gulp": "^0.5.0",
+    "typescript": "^2.4.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
