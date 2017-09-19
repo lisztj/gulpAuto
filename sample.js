@@ -51,20 +51,16 @@ function sample() {
             throw "NO Files,Please Check Files!"
         }
         if (file.isBuffer()) {
-
             //拿到单个文件buffer
             var content = file.contents.toString("utf-8");
-
             //console.log(contents);
             // file.contents = new Buffer(content, "utf-8");
             //可以通过buffer.toString("utf-8")转换成字符串
             //contents = file.contents.toString("utf-8")
-
             var reg = /("([^\\\"]*(\\.)?)*")|('([^\\\']*(\\.)?)*')|(\/{2,}.*?(\r|\n))|(\/\*(\n|.)*?\*\/)/g, // 正则表达式  
                 str = content; // 欲处理的文本
             //console.log(str); // 打印出：原文本
             console.log(str.match(reg)); // 打印出：匹配子串
-
             // str.replace(reg, function(word) { // 去除注释后的文本
             //     return /^\/{2,}/.test(word) || /^\/\*/.test(word) ? "" : word;
             // });
@@ -86,12 +82,9 @@ function sample() {
         // this.push();
         gutil.log(gutil.colors.red(i), gutil.colors.green("已经处理完毕！"));
         callback();
-
     });
-
     //返回这个流文件
     return stream;
 };
-
 // exporting the plugin
 module.exports = sample;
