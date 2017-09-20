@@ -13,7 +13,6 @@ var gutil = require('gulp-util');
 var chalk = require('chalk'); //设置颜色
 chalk.blue('Hello world!');
 
-
 /**
  * 用户列表返回数据实体
  * @BaseResponse
